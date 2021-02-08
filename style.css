@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to right, #991bc7, #7c50d8, #636de0, #5783de, #6195d6);
+    margin: 0;
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input[type='button'] {
+    font-size: 18px;
+    width: 22%;
+    height: 60px;   
+}
+#sButton {
+    display: none;
+}
+#eventField {
+    display: none;
+    text-align: center;
+}
+.game-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner-field {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.inner-field button {
+    display: block;
+    border: black solid 1px;
+    background-color: blanchedalmond;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 22%;
+    height: 100px;
+}
+#lostGame {
+    display: none;
+    text-align: center;
+}
+#winGame {
+    display: none;
+    text-align: center;
+}
+#prizeInf {
+    display: none;
+    font-size: 18px;
+}

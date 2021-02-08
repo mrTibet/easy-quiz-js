@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-menu">
+    <input id="nGameButton" type="button" value="Start new game" onclick="startTheGame()">
+    <input id="sButton" type="button" value="Skip question" onclick="skipButton()">
+  </div>
+  <div id="eventField" class="game-field">
+    <h2 id="question">Some question</h2>
+    <div class="inner-field">
+    <button id="zero" value="0" onclick="checkAnswer(this.value)"></button>
+    <button id="one" value="1" onclick="checkAnswer(this.value)"></button>
+    <button id="two" value="2" onclick="checkAnswer(this.value)"></button>
+    <button id="three" value="3" onclick="checkAnswer(this.value)"></button>
+  </div>
+  </div>
+  <h1 id="lostGame">Game over. Your prize is: <span id="lostGamePrize"></span></h1>
+  <h1 id="winGame">Congratulations! You won 1000000.</h1>
+  <div id="prizeInf">
+    <p>Total prize: <span id="tPrize">0</span></p>
+    <p>Prize on current round: <span id="cPrize">100</span></p>
+  </div>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

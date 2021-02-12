@@ -2,6 +2,13 @@ body{
     background-image: linear-gradient(to right, #991bc7, #7c50d8, #636de0, #5783de, #6195d6);
     margin: 0;
 }
+.main{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100%;
+}
 .main-menu {
     display: flex;
     align-items: center;
@@ -30,6 +37,18 @@ input[type='button'] {
     justify-content: space-around;
     width: 100%;
 }
+.first-line{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    flex-grow: 4;
+}
+.second-line{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    flex-grow: 4;
+}
 .inner-field button {
     display: block;
     border: black solid 1px;
@@ -38,7 +57,7 @@ input[type='button'] {
     text-align: center;
     border-radius: 4px;
     margin-right: 5px;
-    width: 22%;
+    width: 40%;
     height: 100px;
 }
 #lostGame {
@@ -52,4 +71,24 @@ input[type='button'] {
 #prizeInf {
     display: none;
     font-size: 18px;
+}
+@media screen and (max-width: 768px){
+    .main{
+        align-content: space-between;
+        height: 100vh;
+        justify-content: space-between;
+    }
+    .main-menu{
+        
+    }
+    .inner-field{
+        flex-direction: column;
+    }
+    .first-line {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .second-line {
+        width: 100%;
+    }
 }

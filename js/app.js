@@ -30,6 +30,7 @@ function startTheGame() {
     document.getElementById('eventField').style.display = 'block'
     document.getElementById('sButton').style.display = 'block'
     document.getElementById('prizeInf').style.display = 'block';
+    document.querySelector('.conclusion').style.display = 'none';
     document.getElementById('lostGame').style.display = 'none';
     document.getElementById('winGame').style.display = 'none';
     nextLevel();
@@ -57,6 +58,7 @@ function checkAnswer(value) {
         if(totPrize>=mil){
             document.getElementById('eventField').style.display = 'none';
             document.getElementById('prizeInf').style.display = 'none';
+            document.querySelector('.conclusion').style.display = 'flex';
             document.getElementById('winGame').style.display = 'block';
             document.getElementById('nGameButton').disabled = false;
         }else {
@@ -66,6 +68,7 @@ function checkAnswer(value) {
     }else {
         document.getElementById('eventField').style.display = 'none';
         document.getElementById('prizeInf').style.display = 'none'; 
+        document.querySelector('.conclusion').style.display = 'flex';
         document.getElementById('lostGame').style.display = 'block';
         document.getElementById('lostGamePrize').innerHTML = totPrize;
         document.getElementById('nGameButton').disabled = false;

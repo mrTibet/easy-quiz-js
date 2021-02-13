@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HW_8</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="main">
     <div class="main-menu">
-      <input id="nGameButton" type="button" value="Start new game" onclick="startTheGame()">
-      <input id="sButton" type="button" value="Skip question" onclick="skipButton()">
+      <input id="nGameButton" type="button" value="New game" onclick="startTheGame()">
+      <input id="sButton" type="button" value="Skip" onclick="skipButton()">
     </div>
     <div id="eventField" class="game-field">
       <div class="question-table">
@@ -28,8 +30,10 @@
         </div>
     </div>
     </div>
-    <h1 id="lostGame">Game over. Your prize is: <span id="lostGamePrize"></span></h1>
-    <h1 id="winGame">Congratulations! You won 1000000.</h1>
+    <div class="conclusion">
+      <h1 id="lostGame">Game over. Your prize is: <span id="lostGamePrize"></span></h1>
+      <h1 id="winGame">Congratulations! You won 1000000.</h1>
+    </div>
     <div id="prizeInf">
       <p>Total prize: <span id="tPrize">0</span></p>
       <p>Prize on current round: <span id="cPrize">100</span></p>

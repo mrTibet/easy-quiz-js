@@ -24,6 +24,11 @@ function skipButton() {
     document.getElementById('sButton').style.display = 'none';
 }
 
+document.getElementById('nGameButton').addEventListener('click',function(){
+    document.querySelector('.main-menu').classList.add('upper-menu');
+    document.querySelector('.rules').style.display = 'none';
+});
+
 let rightAnswer;
 //new game function
 function startTheGame() {

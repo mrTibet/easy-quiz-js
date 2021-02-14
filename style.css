@@ -12,7 +12,27 @@ body{
 .main-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.upper-menu{
+    height: auto;
     justify-content: space-between;
+    flex-direction: row;
+}
+.rules{
+    background-color: #E39774;
+    color: black;
+    margin-top: 1%;
+    padding: 1%;
+    border-radius: 4px;
+}
+.rules p{
+    text-align: center;
+}
+ul li{
+    list-style: none;
 }
 input[type='button'] {
     font-size: 1.25em;
@@ -100,5 +120,8 @@ input[type='button'] {
     }
     .second-line {
         width: 100%;
+    }
+    input[type='button']{
+        min-width: 40%;
     }
 }
